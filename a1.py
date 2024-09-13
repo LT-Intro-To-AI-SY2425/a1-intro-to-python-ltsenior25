@@ -23,10 +23,8 @@ def factorial(n: int) -> int:
     # 4!= 4*3*2*1
     # 5!= 5*4*3*2*1
     result=1 
-    print(range(1,5))
-    for x in range(1, n 1):
+    for x in range(1, n + 1):
         result = result * x 
-    print(result)
     return result 
     
 
