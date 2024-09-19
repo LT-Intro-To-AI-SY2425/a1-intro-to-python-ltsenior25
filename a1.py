@@ -32,17 +32,7 @@ T = TypeVar("T")
 
 
 def every_other(lst: List[T]) -> List[T]:
-    """Takes a list and returns a list of every other element in the list, starting with
-    the first.
-
-    Args:
-        lst - a list of any (constrained by type T to be the same type as the returned
-            list)
-
-    Returns:
-        a list of every of other item in the original list starting with the first
-    """
-    raise NotImplementedError("every_other")
+    return lst[::2]
 
 
 def sum_list(lst: List[int]) -> int:
@@ -55,20 +45,32 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
-    raise NotImplementedError("sum_list")
+    s=0
+    for el in lst:
+        s += el
+    return s 
 
 
 def mean(lst: List[int]) -> float:
-    """Takes a list of numbers, and returns the mean of the numbers.
+    """can be done multiple ways"""
+    # if not lst:  # Check if the list is empty
+    #     raise ValueError("The list is empty, mean is undefined.")
+    
+    # total_sum = sum(lst)  # Sum of all elements in the list
+    # count = len(lst)  # Number of elements in the list
+    
+    # return total_sum / count  
 
-    Args:
-        lst - a list of numbers
+    # s= sum_list(lst)
+    # num_values = len(list)
+    """or this"""
+    # if lst:
+    #         return s/num_values
+    # else:
+    #     return 0
+    """or this"""
 
-    Returns:
-        the mean of the passed in list
-    """
-    raise NotImplementedError("mean")
-
+    return sum_list(lst) /len(lst) if lst else 0 
 
 def median(lst: List[int]) -> float:
     """Takes an ordered list of numbers, and returns the median of the numbers.
@@ -82,7 +84,12 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    if len(lst) % 2 ==1:
+        return lst[len(lst)//2]
+    else: 
+        in1 = len(list)/2
+        in2 = in1 - 1
+        return (lst[in1] + lst[in2]) / 2
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:
