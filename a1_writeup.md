@@ -14,10 +14,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+    Its fun, complicated sometimes but not too bad.
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+    I feel like java was way more easy compared to python but python is cleaner and does feel smarter.
 
 3. What are some things that you learned through this assignment?
+
+    I learned a lot more code and alot more movement through python. However, I also learned that AI's programming problems just dont work for whatever reason.
